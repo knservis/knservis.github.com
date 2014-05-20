@@ -44,7 +44,7 @@
 
             // Create links to other pages using gotoPage() on the searcher.
             var link = document.createElement('a');
-            link.href= imageSearch.gotoPage(i);
+            link.href="javascript:imageSearch.gotoPage("+i+');';
             link.innerHTML = page.label;
             link.style.marginRight = '2px';
             pagesDiv.appendChild(link);
