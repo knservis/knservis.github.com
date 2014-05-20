@@ -44,7 +44,7 @@
 
             // Create links to other pages using gotoPage() on the searcher.
             var link = document.createElement('a');
-            link.href="/image-search/v1/javascript:imageSearch.gotoPage("+i+');';
+            link.href= imageSearch.gotoPage(i);
             link.innerHTML = page.label;
             link.style.marginRight = '2px';
             pagesDiv.appendChild(link);
@@ -133,7 +133,7 @@ Cheers, <br />
 Kosta</p>
 <p>
   <div id="branding"  style="float: left;"></div><br />
-   <div id="content">Loading...</div>
+   <div id="content">Google image search results loading...</div>
 </p>
       </section>
       <footer>
